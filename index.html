@@ -9,143 +9,195 @@
     <link rel="stylesheet" href="main.css">
     <title>Portfolio</title>      
 </head>
-
-<body>
+<style>
+    #header{
+        padding-top: 60px;
+        padding-bottom: 80px;
+        background-color: rgb(36, 36, 36);
+    }
+    #skills{
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    #tech{
+         padding-top: 60px;
+        padding-bottom: 80px;
+        background-color: rgb(36, 36, 36);
    
-    <div class="header">
-    <img src="bg5.avif" alt="" class="w-100" style="height: 100vh;">
-    <div class="card-img-overlay mt-5">
-    <h1 class="card-title mt-4 ms-5  text-white " id="cardTitle1" style="font-family: 'Franklin Gothic', sans-serif;">Hi, I'm</h1>
-    <h1 class="card-title  ms-5 text-white " id="cardTitle"><b>KURT </b> </h1>
-    <h1 class="card-text  ms-5 "  id="ml10"> 
-        <span id="text-wrapper">
-            <span id="letters">Web Developer</span></span>
-          </span>
-    </h1>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <a href="https://www.facebook.com/kurt.osorio.75"><i class="bi bi-facebook mt-2 ms-5 px-2 "id="socials"></i></a>
-    <a href="https://www.instagram.com/kurtosorioo/"><i class="bi bi-instagram mt-2 ms-4 px-2"id="socials"></i></i></a>
-    <a href="https://twitter.com/kurtosorio_"><i class="bi bi-twitter mt-2 ms-4 px-2 "id="socials"></i></a>
-    <a href="https://github.com/Kurt-hash"><i class="bi bi-github mt-2 ms-4 px-2 " id="socials"></i></a>
-    <a href="WD44 (Osorio, Kurt Jehu C.).pdf"><button type="button" class="mt-5 ms-5 btn btn-dark btn-sm" id="btn-download"><i class="bi bi-download px-2"></i>Download Resume</button></a>
-</div>
-</div>
+    }
+    .footer{
+        /* padding-top: 60px;
+        padding-bottom: 80px; */
+        background-color: rgb(36, 36, 36);
+    }
+    #socials{
+        color: white;
+        font-size: 30px;
+        /* text-align: center; */
+    }
+    .social-links{
+        display: flex;
+        justify-content: center;
+    }
+    body{
+        /* font-family: 'Russo One', sans-serif; */
+        background-color: rgb(31, 31, 31);
+    }
+    .card{
+        width: 23vw;
+        background-color: rgb(80, 77, 77);
+        color: white;
+    }
+</style>
+<body>
 
-<!--Experience-->
-<div class="sec-exp">
-    <div class="container-fluid">
-        <h2 class=" mb-5 ms-5 px-5" style="font-family: 'Franklin Gothic', sans-serif; font-size: 50px;">Experience and Education</h2>
-        <div class="row mb-5">
-            <div class="card col-lg-4 col-md-6 px-5 py-4">
-            <div class="class-body ms-5">
-                <img src="csu.jpg" class="" alt="" id="experience" height="120px">
-                <h4 class="card-text" style="font-size: 20px;"><b>BS Information Technology</b></h4>
-                <h6 class="card-text">Class of 2020</h6>
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar fixed-top  ">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand mx-5 text-white" style="font-size: 30px;">Kurt Osorio</a>
+            <button class="navbar-toggler " data-bs-toggle="collapse" 
+            data-bs-target="#collapse"><span class="navbar-toggler-icon "></span></button>
+        <div class="collapse navbar-collapse" id="collapse">
+        <div class="navbar-nav ms-auto mx-4">
+            <a href="index.html" class="nav-item nav-link text-white">Home</a>
+            <a href="gallery.html" class="nav-item nav-link text-white">Skills</a>
+            <a href="shop.html" class="nav-item nav-link text-white">Tools</a>
+            <a href="project.html" class="nav-item nav-link text-white">Projects</a>
+        </div>
+        </div>
+        </div>
+    </div>
+        </nav>
+    
+        <div class="container-fluid " id="header">
+            <h6 class="text-center  text-white" style=" font-size: 25px;">Hi I'm</h6>
+            <h1 class="text-center text-white" style="font-family: 'Russo One', sans-serif; font-size: 100px;">KURT</h1>
+            <h1 class="text-center  " style="font-family: 'Russo One', sans-serif; font-size: 80px;" id="ml10">
+                <span id="text-wrapper">
+                    <span id="letters">Web Developer</span>
+                </span>
+                  </span>
+                </h1>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                <div class="social-links text-center">
+                <a href="https://www.facebook.com/kurt.osorio.75"><i class="bi bi-facebook px-3  "id="socials"></i></a>
+                <a href="https://www.instagram.com/kurtosorioo/"><i class="bi bi-instagram px-3 "id="socials"></i></i></a>
+                <a href="https://twitter.com/kurtosorio_"><i class="bi bi-twitter px-3  "id="socials"></i></a>
+                <a href="https://github.com/Kurt-hash"><i class="bi bi-github px-3 " id="socials"></i></a>
+            </div>
+            <div align="center" class="mt-4">
+            <a href="WD44 (Osorio, Kurt Jehu C.).pdf"><button type="button" class=" btn btn-primary btn-sm" id="btn-download"><i class="bi bi-download px-2"></i>Download Resume</button></a>
+        </div>
+    </div>
+
+
+    <div class="container" id="skills">
+        <h1 class="text-center text-white mb-5 " style="font-family: 'Russo One', sans-serif; font-size: 50px;">Skills</h1>
+        
+        <div class="row">
+                <div class="card col-lg-4 col-md-6 px-3 py-3 ms-5  ">
+                    <i class="bi bi-person-workspace" style="font-size:30px; color: red;" ></i>
+                <div class="class-body ">
+                    <h3 class="card-title " style="font-size: 25px;" ><b>Web Design</b></h3>
+                    <p class="card-text " style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                    
+                </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 px-3 py-4 ms-5 ">
+                    <i class="bi bi-person-workspace" style="font-size:30px; color: red;"></i>
+                <div class="class-body ">
+                    <h3 class="card-title" style="font-size: 25px;"><b>Web Developer</b></h3>
+                    <p class="card-text"    style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                    
+                </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 px-3 py-4 ms-5 ">
+                    <i class="bi bi-person-workspace" style="font-size:30px; color: red;"></i>
+                <div class="class-body ">
+                    <h3 class="card-title" style="font-size: 25px;"><b>Back-end Developer</b></h3>
+                    <p class="card-text" style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                    
+                </div>
+                </div>
+            
+            </div>
+    </div>
+
+        <div class="container-fluid" id="tech">
+            <h1 class="text-center text-white mb-5 " style="font-family: 'Russo One', sans-serif; font-size: 50px;">Technologies and Tools</h1>
+            <div class="row  ms-5">
+                <div class="col-auto mt-4">
+                    <img src="html3.webp" alt="" height="100px" class="px-4 mt-4">
+               
+                
+                    <img src="css3.webp" alt="" height="100px" class="px-4 mt-4">
+                
+               
+                    <img src="javascript2.png" alt="" height="100px" class="px-4 mt-4">
+               
+                
+                    <img src="react.png" alt="" height="100px" class="px-4 mt-4">
+             
+              
+                    <img src="bootstrap1.svg" alt="" height="100px" class="px-4 mt-4">
+
+                    <img src="github5.png" alt="" height="100px" class="px-4 mt-4">
+
+                    <img src="visualstudio.svg" alt="" height="100px" class="px-4 mt-4">
+
+                    <img src="git1.png" alt="" height="100px" class="  px-4 mt-4">
+                
+                    
                 </div>
             </div>
 
-            <div class="card col-lg-4 col-md-6 px-5 py-4">
-                <div class="class-body ms-5">
-                    <img src="ntc.png" class="" alt="" id="experience" height="120px">
-                    <h4 class="card-text" style="font-size: 20px;"><b>National Telecommunications Commission</b></h4>
-                    <h6 class="card-text" style="font-size: 20px;">Intern</h6>
-                </div>
-                </div>
-              
-                <div class="card col-lg-4 col-md-6 px-5 py-4">
-                        <div class="class-body ms-5">
-                            <img src="kodego1.png" class="" alt="" id="experience" height="120px">
-                            <h4 class="card-text" style="font-size: 20px;"><b>Kodego</b></h4>
-                            <h6 class="card-text" style="font-size: 20px;">Intern</h6>
-                        </div>
-                        </div>
-    </div>
-    </div>
-</div>
-
-
-    <!--Technologies-->
-    <div class="sec-tech bg-dark">
-        <h2 class=" mb-5 ms-5 px-5" style="font-family: 'Franklin Gothic', sans-serif; font-size: 50px;">Technologies and Tools</h2>
-    <div class="container-fluid d-flex justify-content-center">
+        </div>
     
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- <ol class="carousel-indicators">
-            <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carousel" data-bs-slide-to="1"> </li>
-        </ol> -->
-        <div class="carousel-inner">
-        <div class="carousel-item active mt-5">
-            <img src="html1.webp" alt="" height="100px" class="tools mt-2 ms-3">
-            <img src="css2.png" alt="" height="100px" class="tools mt-2 ms-3">
-            <img src="javascript3.svg" alt="" height="100px" class="tools mt-2 ms-3">
-            <img src="mysql1.png" alt="" height="100px" class="tools mt-2 ms-3">
-            <img src="github5.png" alt="" height="100px" class="tools mt-2 ms-3">
-        </div>
-        <div class="carousel-item mt-5">
-            <img src="git1.png" alt="" height="100px" class="tools mt-2 ms-3">
-            <img src="laravel1.png" alt="" height="100px" class="tools ms-3">
-            <img src="angular1.png" alt="" height="100px" class="tools ms-3">
-            <img src="bootstrap1.svg" alt="" height="100px" class="tools ms-3">
-            <img src="visualstudio.svg" alt="" height="100px" class="tools ms-3">
-        </div>
-            <!-- <a href="#" class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-            <a href="#" class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a> -->
-        </div>
+        <div class="container" id="skills">
+            <h1 class="text-center text-white mb-5 " style="font-family: 'Russo One', sans-serif; font-size: 50px;">Projects</h1>
+            
+            <div class="row">
+                    <div class="card col-lg-4 col-md-6 px-3 py-3 ms-5  ">
+                        <i class="bi bi-person-workspace" style="font-size:30px; color: red;" ></i>
+                    <div class="class-body ">
+                        <h3 class="card-title " style="font-size: 25px;" ><b>Web Design</b></h3>
+                        <p class="card-text " style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                        
+                    </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 px-3 py-4 ms-5 ">
+                        <i class="bi bi-person-workspace" style="font-size:30px; color: red;"></i>
+                    <div class="class-body ">
+                        <h3 class="card-title" style="font-size: 25px;"><b>Web Developer</b></h3>
+                        <p class="card-text"    style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                        
+                    </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 px-3 py-4 ms-5 ">
+                        <i class="bi bi-person-workspace" style="font-size:30px; color: red;"></i>
+                    <div class="class-body ">
+                        <h3 class="card-title" style="font-size: 25px;"><b>Back-end Developer</b></h3>
+                        <p class="card-text" style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                        
+                    </div>
+                    </div>
+                
+                </div>
         </div>
         
-    </div>
-</div>
-            
-
-    
-
-<!--My Work-->
-<div class="work">
-<div class="container-fluid ">
-    <h2 class=" mt-4 ms-5 px-5" style="font-family: 'Franklin Gothic', sans-serif; font-size: 50px;">My Work</h2>
-    <p class="ms-5 px-5">These are my open source projects which are fetched directly from Github.</p>
-    <div class="row">
-        <div class="col-md-6 mt-3 col-lg-3 ms-5 ">
-    <div class=" ms-5 mt-2">
-        <div class="class-body1 px-3 py-3">
-           <a href="https://kurt-hash.github.io/"><h5 class="card-title" style="font-size:18px; color: blue;"><i class="bi bi-pc-display px-2"></i><b>Mini Project - Interior Design</b> </h5></a>
-            <p class="card-text mt-2 ms-2">Lorem ipsum, dolor sit amet consectetur  elit. Distinctio, sapiente.</p>
-            <p class=""><i class="bi bi-circle-fill ms-2" style="font-size: 7px; color: orange"></i> HTML<i class="bi bi-circle-fill ms-4" style="font-size: 7px; color: blue"></i> CSS</p>
-            </div>
-        </div>
-        </div>
-        <div class="col-md-6 mt-3 col-lg-3 ms-5  ">
-        <div class=" mt-2 ms-5">
-            <div class="class-body1 px-3 py-3">
-                <a href=" https://kurt-hash.github.io/CalculatorExercise/"> <h5 class="card-title" style="font-size:18px; color: blue;"><i class="bi bi-pc-display px-2"></i><b>Exercise - Calculator</b> </h5></a>
-                <p class="card-text mt-2 ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, saepe?</p>
-                <p class=""><i class="bi bi-circle-fill ms-2" style="font-size: 7px; color: orange"></i> Html<i class="bi bi-circle-fill ms-4" style="font-size: 7px; color: blue"></i> CSS <i class="bi bi-circle-fill ms-4" style="font-size: 7px; color: yellow"></i> Javascript</p>
-            </div>
-            </div>
-            </div>
-            <div class="col-md-6 mt-3 col-lg-3 ms-5">
-            <div class=" mt-2  ms-5">
-                <div class="class-body1 px-3 py-3 ">
-                <a href="  https://kurt-hash.github.io/Patient-Information/"> <h5 class="card-title"style="font-size:18px; color: blue;" ><i class="bi bi-pc-display px-2"></i><b>Exercise - Patient Information</b> </h5></a>
-                <p class="card-text mt-2 ms-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, inventore.</p>
-                <p class=""><i class="bi bi-circle-fill ms-2" style="font-size: 7px; color: orange"></i> Html<i class="bi bi-circle-fill ms-4" style="font-size: 7px; color: blue"></i> CSS <i class="bi bi-circle-fill ms-4" style="font-size: 7px; color: yellow"></i> Javascript</p>
-                    </div>
-                </div>
-                </div>
-</div>
-</div>
-</div>
 
 
-<!--footer-->
-<div class="footer bg-dark">
+   
+   
+
+
+<!-- footer-->
+<div class="footer">
 <div class="container-fluid" >
 
-<div class="mt-5 pt-5 ms-5">
+<div class="mt-5 py-5 ms-5">
     <div class="row">
-        <div class="col-lg-4 px-5" id="get">
-           <h1 class="mb-4" style="font-family: 'Franklin Gothic', sans-serif;"> <i class="bi bi-envelope-fill px-2"></i> Get in touch</h1>
+        <div class="col-lg-4" id="get">
+           <h1 class="mb-4 text-white" style="font-family: 'Franklin Gothic', sans-serif;"> <i class="bi bi-envelope-fill px-2"></i> Get in touch</h1>
            <form action="">
             <input type="text" class="form-control " name="name" id="name" placeholder="Name">
             <input type="text" class="form-control   mt-2" name="email" id="email" placeholder="asd@gmail.com">
@@ -154,8 +206,8 @@
            </form>
         </div>
 
-        <div class="col-lg-4 px-5" >
-            <h1 class="mb-4 px-5" style="font-family: 'Franklin Gothic', sans-serif;"> Contact Me</h1>
+        <div class="col-lg-4" >
+            <h1 class="mb-4 px-5 text-white" style="font-family: 'Franklin Gothic', sans-serif;"> Contact Me</h1>
             <i class="bi bi-envelope-fill mt-2 ms-5 px-2" id="socials"><span class="px-3" style="font-size:20px;">kurtjehu10@gmail.com</span></i><br>
             <a href="https://www.facebook.com/kurt.osorio.75"></a><i class="bi bi-facebook mt-2 ms-5 px-2 "id="socials"></i><br>
             <a href="https://www.instagram.com/kurtosorioo/"></a><i class="bi bi-instagram mt-2 ms-5 px-2 "id="socials"></i><br>
