@@ -16,15 +16,15 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
-  var header = document.getElementById("navbar");
-  var btns = header.getElementsByClassName("nav-item");
-  for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
+//   var header = document.getElementById("navbar");
+//   var btns = header.getElementsByClassName("nav-item");
+//   for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//   var current = document.getElementsByClassName("active");
+//   current[0].className = current[0].className.replace(" active", "");
+//   this.className += " active";
+//   });
+// }
 
 const sections = document.querySelectorAll("section[id]");
 
@@ -50,9 +50,9 @@ function navHighlighter() {
       scrollY > sectionTop &&
       scrollY <= sectionTop + sectionHeight
     ){
-      document.querySelector(".navbar a[href*=" + sectionId + "]").classList.add("active");
+      document.querySelector(".navbar-nav a[href*=" + sectionId + "]").classList.add("active");
     } else {
-      document.querySelector(".navbar a[href*=" + sectionId + "]").classList.remove("active");
+      document.querySelector(".navbar-nav a[href*=" + sectionId + "]").classList.remove("active");
     }
   });
 }
