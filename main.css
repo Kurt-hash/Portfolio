@@ -1,28 +1,88 @@
-@import url('https://fonts.cdnfonts.com/css/franklin-gothic');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 
 
-#ml10 {
-    position: relative;
-    font-weight: 900;
-    font-size: 4em;
-    font-family: 'Poppins', sans-serif;
-  }
+#btn-download{
+  background-color: rgb(136, 182, 46);
+}
+html {
+scroll-behavior: smooth;
+}
+#card2{
+  background-color: rgb(35, 34, 34);
   
-  #ml10 #text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-right: 0.05em;
-    /* padding-bottom: 0.1em; */
-    overflow: hidden;
-  }
+}
+#cards2 {
+  background-color: rgb(40, 39, 39);
+}
   
-  #ml10 #letter {
-    display: inline-block;
-    line-height: 1em;
-    transform-origin: 0 0;
-  }
+#header{
+  padding-top: 150px;
+  padding-bottom: 230px;
+  background-color: rgb(35, 34, 34);
+  /* width: 100%; */
+}
+#skills{
+  padding-top: 60px;
+  padding-bottom: 80px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(40, 39, 39);
+}
+#projects{
+  padding-top: 50px;
+  padding-bottom: 80px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(35, 34, 34);
+}
+#footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(40, 39, 39);
+}
+#socials{
+  color: whitesmoke;;
+  font-size: 30px;   
+}
+
+#socials:hover{
+  background-color: rgb(136, 182, 46);
+  color:black;
+}
+
+
+.card{
+  /* width: 23vw; */
+  background-color: rgb(5, 5, 5);
+  color: white;
+  border: none;
   
+}
+#logo{
+  transition: transform.1s;
+ }
+ #logo:hover{
+  transform: scale(1.1); 
+ }
+ #cards{
+  transition: transform.1s;
+ }
+ #cards:hover{
+  transform: scale(1.1); 
+ }
+ #collapse{
+  font-family: 'Montserrat', sans-serif;
+ }
+ .active{
+  background-color: rgb(136, 182, 46);
+  border-radius: 20px;
+  
+ }
+ .navbar-toggler{
+  background-color: rgb(136, 182, 46);
+ }
+
+
          
          
   
