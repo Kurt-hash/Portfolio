@@ -14,15 +14,15 @@
 
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar fixed-top bg-transparent" >
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand mx-5 " style="font-size: 30px;font-family: 'Montserrat', sans-serif; color: rgb(136, 182, 46);">Kurt Osorio</a>
+            <a href="index.html" class="navbar-brand mx-5" style="font-size: 30px; font-family: 'Poppins', sans-serif; color: #D3D3D3;">Kurt Osorio</a>
             <button class="navbar-toggler " data-bs-toggle="collapse" 
             data-bs-target="#collapse"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="collapse">
         <div class="navbar-nav ms-auto mx-4 text-white">
-            <a href="#header" class="nav-item nav-link active text-white   px-3 "><b>Home</b></a>
+            <a href="#header" class="nav-item nav-link active text-white px-3 "><b>Home</b></a>
             <a href="#skills" class="nav-item nav-link text-white  px-3"><b>Skills</b></a>
-            
             <a href="#projects" class="nav-item nav-link text-white  px-3"><b>Projects</b></a>
+            <a href="WD44 (Osorio, Kurt Jehu C.).pdf" class="btn ms-3 " id="download"><i class="bi bi-download px-2"></i>Download Resume</a>
         </div>
         </div>
         
@@ -30,54 +30,73 @@
         </nav>
         
         <section id="header">
-            <div class="container-fluid d-flex justify-content-center">
-              <div class="card" id="card2">
-                <p class="card-title px-1 text-center  " style="font-family: 'Montserrat', sans-serif; font-size: 20px; color: rgb(136, 182, 46);">HI, I'M</p>
-                <h1 class="card-text px-1 text-center " style= "font-size: 90px; font-family: 'Poppins', sans-serif; color: whitesmoke; ">KURT</h1>
-                <h1 class="card-text text-center " style= "font-size: 60px; font-family: 'Poppins', sans-serif; color: whitesmoke;">WEB DEVELOPER</h1>
+            <div class="container">
+              <div class="card mt-5" id="card2">
+                <h1 class="card-title  text-center" style="font-size: 70px; font-weight: 600; color: #D3D3D3;">Hi, I'm Kurt Osorio</h1>
+                <p class="card-text text-center lead" style="font-size: 25px; color: #D3D3D3;">A Front-end Developer Based in Philippines</p>
+                
                     <div align="center">
-                    <div class="social-links ">
-                        <a href="https://www.facebook.com/kurt.osorio.75" target="_blank"><i class="bi bi-facebook px-4   "id="socials"></i></a>
-                        <a href="https://www.instagram.com/kurtosorioo/" target="_blank"><i class="bi bi-instagram px-4  "id="socials"></i></i></a>
-                        <a href="https://twitter.com/kurtosorio_" target="_blank"><i class="bi bi-twitter px-4   "id="socials"></i></a>
-                        <a href="https://github.com/Kurt-hash" target="_blank"><i class="bi bi-github px-4  " id="socials"></i></a>
-                    </div>
-                    <a href="WD44 (Osorio, Kurt Jehu C.).pdf" style="font-family: 'Montserrat', sans-serif;"><button type="button" class=" btn btn-sm mt-5 " id="btn-download" style="background-color: rgb(136, 182, 46);"><i class="bi bi-download px-2"></i><b>Download Resume</b></button></a>
+                        <a href="#footer" class="btn mt-3 ms-3" id="download" data-bs-toggle="modal" data-bs-target="#contactme">Contact Me</a>
+                        <a href="#projects" class="btn mt-3 ms-3" id="download">See my Work</a>
+                        
                 </div>
-              
               </div>
             </div>
             </div>
-      
            </section>
+                <!--Modal-->
+           <div class="modal" id="contactme">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header d-block">
+                        <h5 class="modal-title text-center text-white" style="font-family: 'Poppins', sans-serif;">Contact Me</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form id="my-form">
+                            <input type="text" name="from_name" id="from_name" placeholder="Your name" class="form-control">
+                            <input type="email" name="from_email" id="from_email" placeholder="Your email address" class="form-control mt-2">
+                            <input type="text" name="to_name" id="to_name" placeholder="Recipient's name" class="form-control mt-2">
+                            <input type="email" name="to_email" id="to_email" placeholder="Recipient's email address" class="form-control mt-2">
+                            <input type="text" name="subject" id="subject" placeholder="Email subject" class="form-control mt-2">
+                            <textarea name="message" cols="30" id="message" rows="10" placeholder="Email message" class="form-control mt-2"></textarea>
+                            <button type="submit" class="btn mt-2 " id="download">Send<i class="bi bi-send-fill ms-2"></i></button>
+                        </form>
+                        <a href="index.html"><button type="submit" class="btn mt-2 w-25" id="download">Back</button></a>
+
+                    </div>
+                    </div>
+
+                </div>
+
+           </div>
     
 
 
            <section id="skills">
             <div class="container" >
-                <h1 class="text-center text-white  mb-3" id="" style="font-family: 'Poppins', sans-serif; font-size: 40px;">Skills</h1>
+                <h1 class="text-center text-white  mb-3" id="" style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 40px;">Skills</h1>
                 <div class="row">
                     <div class="card col-lg-4 col-md-6 px-5 py-4" id="cards2">
-                        <i class="bi bi-person-workspace text-center" style="font-size:50px; color: rgb(136, 182, 46);" ></i>
+                        <i class="bi bi-person-workspace text-center" style="font-size:50px; color: #D3D3D3;" ></i>
                     <div class="class-body">
                         <h3 class="card-title text-center mt-2 " style="font-size: 25px;" ><b>Web Design</b></h3>
-                        <p class="card-text " style="font-size: 15px; text-align: justify;">Lorem ipsum, dolor sit consectetur  consectetur adipisicing elit ipsum sit. </p>
+                        <p class="card-text lead text-center " style="font-size: 15px; text-align: justify;">Lorem ipsum, dolor sit consectetur  consectetur adipisicing elit ipsum sit. </p>
                     </div>
                     </div>
                 
                     <div class="card col-lg-4 col-md-6 px-5 py-4" id="cards2">
-                        <i class="bi bi-code-slash text-center" style="font-size:50px; color: rgb(136, 182, 46);" ></i>
+                        <i class="bi bi-code-slash text-center" style="font-size:50px; color: #D3D3D3;" ></i>
                     <div class="class-body">
                         <h3 class="card-title text-center mt-2 " style="font-size: 25px;" ><b>Web Developer</b></h3>
-                        <p class="card-text " style="font-size: 15px; text-align: justify;">Lorem ipsum, dolor sit consectetur  consectetur adipisicing ipsum sit. </p>
+                        <p class="card-text lead text-center " style="font-size: 15px; text-align: justify;">Lorem ipsum, dolor sit consectetur  consectetur adipisicing ipsum sit. </p>
                     </div>
                     </div>
             
                     <div class="card col-lg-4 col-md-6 px-5 py-4" id="cards2">
-                        <i class="bi bi-braces text-center" style="font-size:50px; color: rgb(136, 182, 46);" ></i>
+                        <i class="bi bi-braces text-center" style="font-size:50px; color: #D3D3D3;" ></i>
                     <div class="class-body">
                         <h3 class="card-title text-center mt-2 " style="font-size: 25px;" ><b>Back-end Developer</b></h3>
-                        <p class="card-text " style="font-size: 15px; text-align: justify;">Lorem ipsum, dolor sit consectetur  consectetur adipisicing ipsum sit. </p>
+                        <p class="card-text lead text-center " style="font-size: 15px; text-align: justify;">Lorem ipsum, dolor sit consectetur  consectetur adipisicing ipsum sit. </p>
                     </div>
                     </div>
         
@@ -91,29 +110,47 @@
             <h1 class="text-center text-white  mb-5" id="" style="font-family: 'Poppins', sans-serif; font-size: 40px;">Projects</h1>
             <div class="row">
                 <div class="card col-lg-4 col-md-6 px-5 py-4" id="card2">
-                    <a href="https://kurt-hash.github.io/" target="_blank"><img src="proj1.png" alt="" height="220vh"   class=" card-img-top " id="logo"></a>
+                    <a href="https://kurt-hash.github.io/" target="_blank"><img src="interior.png" alt="" class=" img-fluid " id="logo"></a>
                 <div class="class-body">
-                    <h3 class="card-title pt-3 " style="font-size: 25px; color: rgb(136, 182, 46);" ><b>E-Magazine</b></h3>
-                    <h3 class="card-title " style="font-size: 25px;"><b>(Mini Project)</b></h3>
-                    <p class="card-text " style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                    <h3 class="card-title pt-3 " style="font-size: 20px;" ><b>Interior Design</b></h3>
+                    <h3 class="card-title " style="font-size: 20px;"><b>(Mini Project)</b></h3>
+                    <p class="card-text lead " style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
                 </div>
                 </div>
             
                 <div class="card col-lg-4 col-md-6 px-5 py-4" id="card2">
-                    <a href="https://kurt-hash.github.io/" target="_blank"><img src="proj2.png" alt="" height="220vh"   class=" card-img-top " id="logo"></a>
+                    <a href="https://venzkie1.github.io/OriginSwift/index.html?fbclid=IwAR3K0L51DAd-uMXF49HU24uolSNTdQF3fylqpzx1NZTRtjz_1lb3MwwI1RM" target="_blank"><img src="origin.png" alt="" class=" img-fluid " id="logo"></a>
                 <div class="class-body">
-                    <h3 class="card-title pt-3" style="font-size: 25px; color: rgb(136, 182, 46);"><b>Calculator</b></h3>
-                    <h3 class="card-title " style="font-size: 25px;"><b>(Exercise)</b></h3>
-                    <p class="card-text"    style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                    <h3 class="card-title pt-3" style="font-size: 20px;"><b>Origin Swift</b></h3>
+                    <h3 class="card-title " style="font-size: 20px;"><b>(Mini Project 2)</b></h3>
+                    <p class="card-text lead"    style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 px-5 py-4" id="card2">
+                    <a href="https://pinkdollar123.github.io/SoulShine/index.html" target="_blank"><img src="soul.png" alt="" class=" img-fluid " id="logo"></a>
+                <div class="class-body">
+                    <h3 class="card-title pt-3" style="font-size: 20px;"><b>Soul Shine Beach House</b></h3>
+                    <h3 class="card-title" style="font-size: 20px;"><b>(Mini Project 3)</b></h3>
+                    <p class="card-text lead"  style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 px-5 py-4" id="card2">
+                    <a href="https://kurt-hash.github.io/GCash-Homepage/" target="_blank"><img src="gcash.png" alt="" class=" img-fluid " id="logo"></a>
+                <div class="class-body">
+                    <h3 class="card-title pt-3" style="font-size: 20px;"><b>Gcash Homepage</b></h3>
+                    <h3 class="card-title" style="font-size: 20px;"><b>(Replica)</b></h3>
+                    <p class="card-text lead"  style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
                 </div>
                 </div>
         
                 <div class="card col-lg-4 col-md-6 px-5 py-4" id="card2">
-                    <a href="https://kurt-hash.github.io/" target="_blank"><img src="proj3.png" alt="" height="220vh"   class=" card-img-top " id="logo"></a>
+                    <a href="https://kurt-hash.github.io/Patient-Information/" target="_blank"><img src="proj3.png" alt="" height="220vh"   class=" img-fluid " id="logo"></a>
                 <div class="class-body">
-                    <h3 class="card-title pt-3" style="font-size: 25px; color: rgb(136, 182, 46);"><b>Patient Information</b></h3>
-                    <h3 class="card-title " style="font-size: 25px;"><b>(Exercise)</b></h3>
-                    <p class="card-text"    style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
+                    <h3 class="card-title pt-3" style="font-size: 20px;"><b>Patient Information</b></h3>
+                    <h3 class="card-title " style="font-size: 20px;"><b>(Exercise)</b></h3>
+                    <p class="card-text lead"    style="font-size: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, labore?</p>
                 </div>
                 </div>
 
@@ -128,38 +165,21 @@
 
 
 <section id="footer">
-<div class="container" >
-
-<div class="mt-5  ms-1">
-    <div class="row">
-        <div class="col-lg-6" id="get">
-           <h1 class="mb-4 text-white mt-5" style="font-family: 'Franklin Gothic', sans-serif;"> <i class="bi bi-envelope-fill px-2" style="color: rgb(136, 182, 46);"></i> Get in touch</h1>
-           <form action="">
-            <input type="text" class="form-control " name="name" id="name" placeholder="Name">
-            <input type="text" class="form-control   mt-2" name="email" id="email" placeholder="asd@gmail.com">
-            <textarea name="review" id="review" cols="30" rows="10" class="form-control mt-2 "></textarea>
-            <button type="button" class=" btn  btn-sm mt-3 px-4" id="btn-download"></i><b>Send</b><i class="bi bi-send-fill px-2"></i></button></a>
-           </form>
-        </div>
-
-        <div class=" mt-5 col-lg-6" >
-            <h1 class="mb-4 px-3  text-white " style="font-family: 'Franklin Gothic', sans-serif;"> Contact Me</h1>
-            <i class="bi bi-envelope-fill mt-2 ms-3 px-2" id="socials"><span class="px-3" style="font-size:20px;">kurtjehu10@gmail.com</span></i><br>
-            <a href="https://www.facebook.com/kurt.osorio.75" target="_blank"><i class="bi bi-facebook mt-2 ms-3 px-2 "id="socials"></i><br></a>
-            <a href="https://www.instagram.com/kurtosorioo/" target="_blank"><i class="bi bi-instagram mt-2 ms-3 px-2 "id="socials"></i><br></a>
-            <a href="https://twitter.com/kurtosorio_" target="_blank"><i class="bi bi-twitter mt-2 ms-3 px-2 "id="socials"></i><br></a>
-            <a href="https://github.com/Kurt-hash" target="_blank"><i class="bi bi-github mt-2 ms-3 px-2 "id="socials"></i><br></a>
-        </div>
-        <div>
-        </div>
-        
+<div class="container d-flex justify-content-center">
+    <div>
+        <a href="https://www.facebook.com/kurt.osorio.75" class="px-3" target="_blank"><i class="bi bi-facebook text-white" id="socials"></i></a>
+        <a href="https://www.instagram.com/kurtosorioo/" class="px-3" target="_blank"><i class="bi bi-instagram text-white" id="socials"></i></a>
+        <a href="https://twitter.com/kurtosorio_" class="px-3" target="_blank"><i class="bi bi-twitter text-white" id="socials"></i></a>
+        <a href="https://github.com/Kurt-hash" class="px-3" target="_blank"><i class="bi bi-github text-white" id="socials"></i></a>
     </div>
-    <p class=" text-center text-secondary mt-5">&copy; 2023 Kurt Osorio. All Rights Reserved.</p>
+   
 </div>
+<p class="card-text text-center text-white mt-4 pt-4">&copy; 2023 Kurt Osorio. All Rights Reserved.</p>
 
 
 </section> 
-
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></i></button>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
    <script src="main.js"></script>
     
