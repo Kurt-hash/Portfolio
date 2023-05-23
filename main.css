@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@200;300;500;600;700&display=swap');
 
-
+*{
+  box-sizing: border-box;
+}
 #download{
   border: 1px solid #D3D3D3;
-   color: #D3D3D3;
+   color: #FFD700;
    
 }
 html {
@@ -50,8 +52,11 @@ scroll-behavior: smooth;
   background-color: #0a192c;
 }
 #socials{
-  color: whitesmoke;;
+  color: #D3D3D3;
   font-size: 30px;   
+}
+#socials:hover{
+  color: #FFD700;
 }
 h1, h3{
   color: #D3D3D3;
@@ -81,7 +86,7 @@ h1, h3{
   font-family: 'Montserrat', sans-serif;
  }
  .active{
-  border-bottom:2px solid #D3D3D3;
+  border-bottom:2px solid #FFD700;
  }
  .modal-content{
   background-color: #0a192f;
