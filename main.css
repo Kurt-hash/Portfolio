@@ -25,8 +25,8 @@ scroll-behavior: smooth;
   color: white;
  } 
  #links:hover{
-  color: lightskyblue;
-  border-bottom: 1px solid lightskyblue;
+  color: #FFD700;
+  border-bottom: 1px solid #FFD700;
  }
 #header{
   padding-top: 200px;
