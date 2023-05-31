@@ -1,3 +1,42 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Simulate a delay to showcase the loading screen
+  setTimeout(function() {
+   let loadingScreen = document.getElementById("loading-screen");
+    let mainContent = document.getElementById("main-content");
+    let header = document.getElementById("header");
+    let skills = document.getElementById("skills");
+    let projects = document.getElementById("projects");
+    let footer = document.getElementById("footer");
+    let social = document.getElementById("social")
+
+    loadingScreen.style.display = "none";
+    mainContent.style.display = "block";
+    header.style.display = "block";
+    skills.style.display = "block";
+    projects.style.display = "block";
+    footer.style.display = "block";
+    social.style.display = "block";
+  }, 3000);
+});
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+      }
+      else {
+          entry.target.classList.remove('show');
+      }
+  });
+})
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
@@ -50,7 +89,7 @@ function navHighlighter() {
   });
 }
 
-// Modal
+// Get in touch
 (function() {
   emailjs.init('lF1m_Byuvj_hi4UOO');
 })();
@@ -77,3 +116,5 @@ document.getElementById('my-form').addEventListener('submit', function(event) {
           console.log('FAILED...', error);
       });
 });
+
+
