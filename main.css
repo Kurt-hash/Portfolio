@@ -51,6 +51,7 @@
   #links:hover{
     color: #FFD700;
     border-bottom: 1px solid #FFD700;
+    cursor: pointer;
   }
 
   #socials {
@@ -78,6 +79,7 @@
 
   #socials:hover{
     color: #FFD700;
+    cursor: pointer;
   }
 
   h1, h3{
@@ -100,7 +102,8 @@
   transition: transform.1s;
   }
   #cards:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
+  cursor: pointer; 
   }
   .active {
     border-bottom:2px solid #FFD700;
@@ -141,6 +144,7 @@
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   transition: 1s ease;
+  cursor: pointer;
  }
  
  
@@ -166,6 +170,7 @@
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     transition: 1s ease;
+    cursor: pointer;
   }
 
   .btn:hover {
@@ -173,6 +178,7 @@
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     transition: 1s ease;
+    cursor: pointer;
   }
 
   #loading-screen {
