@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let skills = document.getElementById("skills");
     let projects = document.getElementById("projects");
     let footer = document.getElementById("footer");
-    let social = document.getElementById("social")
+    
 
     loadingScreen.style.display = "none";
     mainContent.style.display = "block";
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     skills.style.display = "block";
     projects.style.display = "block";
     footer.style.display = "block";
-    social.style.display = "block";
+    
   }, 3000);
 });
 
