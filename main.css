@@ -21,6 +21,9 @@
     font-family: 'Nunito Sans', sans-serif; 
     color: #D3D3D3;
   }
+  .navbar-brand:hover {
+    color: #FFD700;
+  }
 
   .title {
     font-size: 70px;
