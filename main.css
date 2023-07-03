@@ -36,7 +36,7 @@
   }
 
   #header {
-    margin-top: 30vh;
+    margin-top: 25vh;
   }
 
   .hidden {
@@ -69,7 +69,6 @@
 
   #links:hover{
     color: #FFD700;
-    border-bottom: 1px solid #FFD700;
     cursor: pointer;
   }
 
@@ -190,6 +189,7 @@
     transform: scale(1.2);
     transition: 1s ease;
     cursor: pointer;
+    color: #FFD700;
   }
 
   .btn:hover {
@@ -207,91 +207,32 @@
     height: 100vh;
     background-color: #0a192f;
   }
-    
-  svg {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(1);
-    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+   
+  .loader {
+    position: relative;
+    width:  48px;
+    height: 48px;
+    background: #FFD700;
+    transform: rotateX(65deg) rotate(45deg);
+    transform: perspective(200px) rotateX(65deg) rotate(45deg); 
+    color: #fff;
+    animation: layers1 1s linear infinite alternate;
   }
-    
-  .stroke-still {
-    stroke: #232323;
+  .loader:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.7);
+    animation: layerTr 1s linear infinite alternate;
   }
-    
-  .stroke-animation {
-    -webkit-animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
-    animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-delay: 0;
-    animation-delay: 0;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
+
+  @keyframes layers1 {
+    0% { box-shadow: 0px 0px 0 0px  }
+   90% , 100% { box-shadow: 20px 20px 0 -4px  }
   }
-    
-  @-webkit-keyframes stroke-spacing {
-    0% {
-    stroke-dasharray: 0 200;
-    }
-    45% {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 200 200;
-    }
-    90% {
-    stroke-dashoffset: -200;
-    stroke-dasharray: 200 200;
-    }
-    100% {
-    stroke-dashoffset: -200;
-    stroke-dasharray: 200 200;
-    }
-}
-    
-  @keyframes stroke-spacing {
-    0% {
-    stroke-dasharray: 0 200;
-    }
-    45% {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 200 200;
-    }
-    90% {
-    stroke-dashoffset: -200;
-    stroke-dasharray: 200 200;
-    }
-    100% {
-    stroke-dashoffset: -200;
-    stroke-dasharray: 200 200;
-    }
+  @keyframes layerTr {
+    0% { transform:  translate(0, 0) scale(1) }
+    100% {  transform: translate(-25px, -25px) scale(1) }
   }
-    
-  @-webkit-keyframes stroke-color {
-    0%  { stroke: #3498DB; }
-    24% { stroke: #643232; }
-    25% { stroke: #327864; }
-    49% { stroke: #327864; }
-    50% { stroke: #32326e; }
-    74% { stroke: #32326e; }
-    75% { stroke: #78325a; }
-    99% { stroke: #78325a; }
-}
-    
-  @keyframes stroke-color {
-    0%  { stroke: #3498DB; }
-    24% { stroke: #643232; }
-    25% { stroke: #327864; }
-    49% { stroke: #327864; }
-    50% { stroke: #32326e; }
-    74% { stroke: #32326e; }
-    75% { stroke: #78325a; }
-    99% { stroke: #78325a; }
-  }
-    
+      
+  
